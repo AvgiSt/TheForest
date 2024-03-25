@@ -1,0 +1,45 @@
+{
+    "notes_to_color": 1,
+    "notes": [50, 63, 70, 50, 86, 90, 60],
+    "colors": [
+        [0, 250],
+        [70,  250],
+        [30,  250],
+        [150, 250],
+        [220, 250],
+        [80,  250],
+        [180, 250]
+    ],
+    "pillars": [
+        {
+            "id": 0,
+            "port": "/dev/ttyACM0",
+            "pan": 0,
+            "num_tubes": 6,
+            "tube_allocation": ["a", "n", "t", "b", "p", "e"],
+            "_comment" : ["amp", "note-pitch", "synth", "bpm", "pan", "envelope"],
+            "map": "RotationMapper"
+        },
+        {
+            "id": 1,
+            "port": "/dev/ttyACM1",
+            "pan": 0,
+            "num_tubes": 6,
+            "tube_allocation": ["a", "n", "t", "b", "p", "e"],  
+            "_comment" : ["amp", "note-pitch", "synth_id", "bpm", "pan", "envelope"],
+            "map": "RotationMapper"
+        }
+    ],
+    "param_range" : 
+        {
+            "a":[20,50],
+            "n": [50,100],
+            "t":[0,42],
+            "b":[50,140],
+            "p":[-1,1],
+            "e":[0,1]
+        },
+    "bpm": 50,
+    "sonic-pi-ip": "127.0.0.1",
+    "sonic-pi-config-file": "/Users/dawn_/.sonic-pi/log/spider.log"
+}
